@@ -35,7 +35,7 @@ const Main = ()=>{
       }
 
       try {
-        const response = await axios.post("/api/sendMail", { name, email, data });
+        const response = await axios.post("https://my-portfolio-gl02.onrender.com/api/sendMail", { name, email, data });
       
         if (response.status === 200) {  // Check for a successful status code
           alert("Mail has been sent successfully");
