@@ -21,7 +21,7 @@ const sendMail = asyncHandler(async (req, res) => {
     var mailOptions = {
         from: email, // The sender's email
         to: "mahendra09022001@gmail.com", // Your email
-        subject: `Message from ${name}`, // A proper subject
+        subject: `Message from ${name} and his email is ${email} `,
         text: data, // The content of the email
     };
 
