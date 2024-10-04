@@ -13,7 +13,7 @@ const apiUrl = process.env.REACT_APP_API_URL;
 app.get("/" , (req ,res)=>{
      res.send("hello frontend");
 });
-app.use(`${apiUrl}/api/sendMail` , MailRoutes);
+app.use(`/api/sendMail` , MailRoutes);
 app.listen(port , ()=>{
       console.log(`server is running at Port ${port}`);
 })
